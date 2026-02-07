@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #2c3e50);
+  color: white;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #00f2ff;
+}
+
+header button {
+  padding: 8px 15px;
+  border: none;
+  background: #00f2ff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background: #00c2cc;
+}
+
+.create-server, .server-list {
+  background: rgba(0,0,0,0.65);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+.create-server input[type="range"] {
+  width: 100%;
+}
+
+.create-server input, .create-server button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.create-server button {
+  background: #00f2ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-server button:hover {
+  background: #00c2cc;
+}
+
+.server-card {
+  background: rgba(0,0,0,0.45);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.server-card h3 {
+  margin: 0 0 5px 0;
+}
+
+.server-card button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.server-card button:hover {
+  background: #cc0000;
+}
+
+.server-card p span {
+  font-weight: bold;
+}

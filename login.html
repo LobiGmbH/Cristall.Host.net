@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cristall Host – Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>💎 Cristall Host</h1>
+  <p>Login</p>
+
+  <input id="username" placeholder="Benutzername">
+
+  <button onclick="login()">Einloggen</button>
+</div>
+
+<script>
+function login() {
+  const user = document.getElementById("username").value;
+
+  if (user.length < 3) {
+    alert("Benutzername zu kurz!");
+    return;
+  }
+
+  localStorage.setItem("cristallUser", user);
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
